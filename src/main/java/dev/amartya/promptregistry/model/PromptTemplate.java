@@ -20,6 +20,10 @@ public class PromptTemplate {
     @NotNull
     private List<@Valid VariableSchema> variables = new ArrayList<>();
 
+    private Integer version;
+
+    private Integer latestVersion;
+
     public String getId() {
         return id;
     }
@@ -50,5 +54,21 @@ public class PromptTemplate {
 
     public void setVariables(List<VariableSchema> variables) {
         this.variables = variables;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public Integer getLatestVersion() {
+        return latestVersion;
+    }
+
+    public void setLatestVersion(Integer latestVersion) {
+        this.latestVersion = latestVersion;
     }
 }
